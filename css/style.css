@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 1200px;   
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
