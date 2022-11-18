@@ -1,0 +1,17 @@
+.list {
+    background-color: white;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.list__item {
+    margin-right: 15px;
+    padding: 5px;
+border-bottom: solid 1px #eee;
+
+}
+.list__item--done {
+    text-decoration: line-through;
+}
