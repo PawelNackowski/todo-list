@@ -1,0 +1,19 @@
+.form {
+    display: grid;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: white;
+    grid-template-columns: auto 150px;
+}
+
+.form__button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.form__input {
+    border: 2px solid #eee;
+}
