@@ -1,13 +1,27 @@
 {
-const task = [];
+const tasks = [];
 
 const addNewTask = (newTaskContent) => {
-task.push({
+tasks.push({
     content: newTaskContent,
 });
-console.log(newTaskContent);
+
+render();
 };
 
+const render = () => {
+    let htmlString = "";
+
+    for (const task of tasks) {
+        htmlString += `
+        <li>
+    ${task.content}
+        </li>
+        `;
+    }
+    
+    document.querySelector(".js-tasks").innerHTML = htmlString;
+}
 
     const onFormSubmit = (event) => {
         event.preventDefault();
