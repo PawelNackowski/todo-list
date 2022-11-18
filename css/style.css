@@ -8,9 +8,18 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
-    max-width: 1200px;   
+    background-color: #eee;
+    max-width: 800px;
+    margin: auto;
+    overflow-x: auto;
 }
 
 .list__item--done {
     text-decoration: line-through;
+}
+
+.subheader {
+    padding: 10px;
+    background-color: white;
+    border: #eee solid 1px;
 }
