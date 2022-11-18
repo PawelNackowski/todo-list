@@ -9,9 +9,13 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #eee;
-    max-width: 800px;
-    margin: auto;
-    overflow-x: auto;
+    display: flex;
+    margin:10px;
+    justify-content: center;
+}
+
+.container {
+    flex-basis: 800px;
 }
 
 .list__item--done {
@@ -19,6 +23,7 @@ body {
 }
 
 .subheader {
+    margin:0;
     padding: 10px;
     background-color: white;
     border: #eee solid 1px;
