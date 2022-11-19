@@ -1,4 +1,4 @@
-.list {
+.taskList {
     background-color: white;
     margin: 0;
     padding-top: 25px;
@@ -6,12 +6,36 @@
     list-style: none;
 }
 
-.list__item {
+.taskList__item {
     margin-right: 15px;
     padding: 5px;
-border-bottom: solid 1px #eee;
+    border-bottom: solid 1px #eee;
 
 }
+
 .list__item--done {
     text-decoration: line-through;
+}
+
+.taskList__button {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.taskList__button--done{
+background-color: green;
+}
+.taskList__button--done:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.taskList__button--remove {
+    background-color: red;
+}
+
+.taskList__button--remove:hover {
+    background-color: hsl(0, 100%, 60%);
 }
