@@ -37,7 +37,6 @@
     });
   }
 
-
   const render = () => {
     let htmlString = "";
 
@@ -59,10 +58,18 @@
   const onFormSubmit = (event) => {
     event.preventDefault();
 
+    const taskContent = document.querySelector(".js-newTask");
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
+
     if (newTaskContent === "") {
+      taskContent.focus();
       return;
     }
+    else if (taskContent.value !== "") {
+      taskContent.value = "";
+      taskContent.focus();
+    }
+
     addNewTask(newTaskContent);
   };
 
