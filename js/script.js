@@ -55,6 +55,11 @@
     bindEvents();
   }
 
+  const clearInput = (taskContent) => {
+    taskContent.value = "";
+    taskContent.focus();
+  };
+
   const onFormSubmit = (event) => {
     event.preventDefault();
 
@@ -62,15 +67,12 @@
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
     if (newTaskContent === "") {
-      taskContent.focus();
+      clearInput(taskContent);
       return;
     }
-    else if (taskContent.value !== "") {
-      taskContent.value = "";
-      taskContent.focus();
-    }
-
+    
     addNewTask(newTaskContent);
+    clearInput(taskContent);
   };
 
   const init = () => {
