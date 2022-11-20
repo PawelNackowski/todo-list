@@ -6,7 +6,7 @@
     margin-bottom: 10px;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
     }
