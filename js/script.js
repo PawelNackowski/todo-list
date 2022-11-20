@@ -61,7 +61,7 @@
   };
 
   const onFormSubmit = (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
     const taskContent = document.querySelector(".js-newTask");
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
@@ -77,7 +77,7 @@
 
   const init = () => {
     const form = document.querySelector(".js-form");
- form.addEventListener("submit", onFormSubmit);
+    form.addEventListener("submit", onFormSubmit);
   };
 
   init();
