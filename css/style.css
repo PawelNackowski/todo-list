@@ -9,14 +9,14 @@ html {
 .body {
     font-family: "Montserrat", sans-serif;
     background-color: #eee;
-    display: flex;
     margin: 15px;
-    justify-content: center;
     word-break: break-word;
 }
 
 .body__container {
-    flex-basis: 800px;
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .footer {

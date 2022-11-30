@@ -1,12 +1,14 @@
 .section {
     background-color: white;
-    margin: 0;
+    margin: 10px;
+    box-shadow: 0 0 5px #ddd;
 }
 
 .section__header {
+    font-size: 20px;
     margin: 0;
-    padding: 10px;
-    border-bottom: #eee solid 2px;
+    padding: 20px;
+    border-bottom: #ddd solid 1px;
 }
 
 .section__container {

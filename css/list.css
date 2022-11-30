@@ -11,6 +11,7 @@
     gap: 10px;
     margin: 5px; 
     border-bottom: solid 1px #eee; 
+    padding: 10px;
 }
 
 .taskList__item--done {
@@ -18,23 +19,23 @@
 }
 
 .taskList__button {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     color: white;
-    margin: 5px;
+    padding: 0;
     border: none;
 }
 
-.taskList__button--done {
+.taskList__button--toggleDone {
     background-color: green;
 }
 
-.taskList__button--done:hover {
+.taskList__button--toggleDone:hover {
     background-color: hsl(120, 100%, 30%);
 }
 
-.taskList__button--done:active {
+.taskList__button--toggleDone:active {
     background-color: hsl(120, 100%, 40%);
 }
 
