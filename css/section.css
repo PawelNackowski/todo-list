@@ -11,6 +11,24 @@
     border-bottom: #ddd solid 1px;
 }
 
+.section__header--grid {
+    padding: 0;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+@media (max-width: 767px) {
+    .section__header--grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section__buttons {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
 .section__container {
     padding: 20px;
 }
