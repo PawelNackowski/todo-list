@@ -14,6 +14,10 @@
     padding: 10px;
 }
 
+.taskList__item--hiden {
+    display: none;
+}
+
 .taskList__item--done {
     text-decoration: line-through;
 }
