@@ -50,16 +50,16 @@
     <li class="${task.done && hidenDoneTasks
           ? "taskList__item--hiden"
           : "taskList__item"}">
-      <button class="js-done taskList__button taskList__button--toggleDone">
-       ${task.done ? " ✔" : ""}
+     <button class="js-done taskList__button taskList__button--toggleDone">
+      ${task.done ? " ✔" : ""}
       </button>
-      <span class="taskList${task.done ? " taskList__item--done" : ""}">
-      ${task.content}
-       </span>
+     <span class="taskList${task.done ? " taskList__item--done" : ""}">
+       ${task.content}
+     </span>
      <button class="js-remove taskList__button taskList__button--remove">
-       🗑
-      </button>
-     </li>
+       🗑   
+     </button>
+   </li>
   `;
     }
 
@@ -77,7 +77,8 @@
     <button class="js-switchDoneTasks buttonSection">
       ${hidenDoneTasks ? "Pokaż" : "Ukryj"} ukończone
     </button>
-    <button class="js-markAllTaskDone buttonSection" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+    <button class="js-markAllTaskDone buttonSection" 
+    ${tasks.every(({ done }) => done) ? "disabled" : ""}>
       Ukończ wszystkie
     </button>`;
   }
