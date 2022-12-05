@@ -12,10 +12,10 @@
 }
 
 .section__header--grid {
-    padding: 0;
-    margin: 20px;
     display: grid;
     grid-template-columns: 1fr auto;
+   padding-top: 0;
+   padding-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -24,11 +24,27 @@
     }
 
     .section__buttons {
+        margin-top: 0;
         display: grid;
         grid-template-rows: 1fr 1fr;
     }
 }
 
+.buttonSection {
+    background: none;
+    color: teal;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    transition: 0.5s;
+}
+
+.buttonSection:hover {
+    color:hsl(180, 100%, 40%);
+}
+ .buttonSection:disabled {
+    color: rgb(199, 199, 199);
+ }
 .section__container {
     padding: 20px;
 }

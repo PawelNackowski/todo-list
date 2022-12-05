@@ -74,10 +74,10 @@
     }
 
     bindButton.innerHTML = `
-    <button class="js-switchDoneTasks">
+    <button class="js-switchDoneTasks buttonSection">
       ${hidenDoneTasks ? "Pokaż" : "Ukryj"} ukończone
     </button>
-    <button class="js-markAllTaskDone" ${tasks.every = (({ done }) => done) ? "disable" : ""}>
+    <button class="js-markAllTaskDone buttonSection" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
       Ukończ wszystkie
     </button>`;
   }
