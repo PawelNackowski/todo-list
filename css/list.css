@@ -34,6 +34,7 @@
 
 .taskList__button--toggleDone {
     background-color: green;
+    transition: 0.5s;
 }
 
 .taskList__button--toggleDone:hover {
@@ -46,6 +47,7 @@
 
 .taskList__button--remove {
     background-color: red;
+    transition: 0.5s;
 }
 
 .taskList__button--remove:hover {
