@@ -6,21 +6,7 @@ html {
     box-sizing: inherit;
 }
 
-.body {
+body {
     font-family: "Montserrat", sans-serif;
     background-color: #eee;
-    margin: 15px;
-    word-break: break-word;
-}
-
-.body__container {
-    max-width: 900px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.footer {
-    margin-top: 25px;
-    text-align: center;
-    font-size: 15px;
 }

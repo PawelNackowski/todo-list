@@ -51,14 +51,14 @@
 
     for (const task of tasks) {
       htmlString += `
-    <li class="${task.done && hidenDoneTasks ? "taskList__item--hiden" : "taskList__item"}">
-     <button class="js-done taskList__button taskList__button--toggleDone">
+    <li class="task__item${task.done && hidenDoneTasks ? "task__item--hiden" : ""}">
+     <button class="js-done task__button task__button--toggleDone">
       ${task.done ? " ✔" : ""}
       </button>
-     <span class="taskList${task.done ? " taskList__item--done" : ""}">
+     <span class="task${task.done ? " task__content--done" : ""}">
        ${task.content}
      </span>
-     <button class="js-remove taskList__button taskList__button--remove">
+     <button class="js-remove task__button task__button--remove">
        🗑   
      </button>
    </li>
@@ -76,16 +76,16 @@
     }
 
     managementButtons.innerHTML = `
-    <button class="js-switchDoneTasks buttonSection">
+    <button class="js-toggleHidenDoneTasks buttons__button">
       ${hidenDoneTasks ? "Pokaż" : "Ukryj"} ukończone
     </button>
-    <button class="js-markAllTaskDone buttonSection" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+    <button class="js-markAllTaskDone buttons__button" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
       Ukończ wszystkie
     </button>`;
   }
 
   const bindButtonsEvents = () => {
-    const switchTaskDone = document.querySelector(".js-switchDoneTasks");
+    const switchTaskDone = document.querySelector(".js-toggleHidenDoneTasks");
     const markAllTaskDone = document.querySelector(".js-markAllTaskDone");
 
     switchTaskDone?.addEventListener("click", switchDoneTask);
